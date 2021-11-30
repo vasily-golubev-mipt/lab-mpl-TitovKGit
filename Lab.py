@@ -1,10 +1,8 @@
-import simpy as sim 
 import matplotlib.pyplot as plt
 from numpy import *
 import time
 import imageio 
 import os
-import sys
 import pandas as pd
 #1
 
