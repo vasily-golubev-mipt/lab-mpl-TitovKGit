@@ -7,7 +7,7 @@ import os
 import sys
 import pandas as pd
 #1
-""""
+
 try:
     with open(input(),'r', encoding = "utf-8") as f:
         data = f.read().split('\n')
@@ -27,7 +27,7 @@ plt.axis([min(x) - 10, max(x) + 10, min(y) - 10, max(y) + 10])
 plt.title(f'Number of points: {data[0]}')
 plt.show()
 print(x, y)
-"""
+
 #2
 
 d = input()
@@ -74,8 +74,7 @@ os.startfile(r'mygif.gif')
 time.sleep(2)
 os.remove('mygif.gif')
 
-
-"""
+#3
 dk = pd.read_csv('students.csv', sep=";", header= None)
 dk.columns = ['prep','group', 'marks']
 test5 = dk.groupby(['prep', 'marks'])['prep'].count().unstack('marks').fillna(0)
@@ -83,5 +82,5 @@ test6 = dk.groupby(['group', 'marks'])['group'].count().unstack('marks').fillna(
 ax = test5.plot(kind='bar', stacked=True, rot= 0)
 bx = test6.plot(kind='bar', stacked=True, rot= 0)
 plt.show()
-"""
+
    
